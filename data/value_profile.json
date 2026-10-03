@@ -1,0 +1,131 @@
+{
+ "circissuetransaction.status": [
+  "Recieved",
+  "Issued",
+  "Received",
+  "Returned"
+ ],
+ "bookaccessionmaster.checkstatus": [
+  "A",
+  "I",
+  "WL",
+  "B"
+ ],
+ "circusermanagement.status": [
+  "Active",
+  "0",
+  "Sleep",
+  ""
+ ],
+ "circusermanagement.gender": [
+  "Male",
+  "Female"
+ ],
+ "circreceivetransaction.ispaid": [
+  "n",
+  "y"
+ ],
+ "circreceivetransaction.finecause": [
+  "No",
+  "Delay"
+ ],
+ "itemstatusmaster.itemstatus": [
+  "Temp",
+  "Stock Only",
+  "SELF",
+  "On Demand",
+  "NA",
+  "Issued",
+  "External Auth",
+  "DISPLAY",
+  "Borrowed"
+ ],
+ "item_type.item_type": [
+  "Thesis",
+  "Reference",
+  "Rare Books",
+  "Project Reports",
+  "Periodical",
+  "Journal",
+  "damage",
+  "Borrowed",
+  "Books",
+  "Book",
+  "Articles",
+  "Account",
+  ""
+ ],
+ "membergroup.groupname": [
+  "this is group name",
+  "student group",
+  "GROUP",
+  "ggggggg",
+  "DDSSDDS",
+  "DDDDD"
+ ],
+ "ordermaster.orderstatus": [
+  "1",
+  "0"
+ ],
+ "bookarrival.isgift": [
+  "0",
+  "1"
+ ],
+ "bookarrival.itemstatus": [
+  "",
+  "catalogued"
+ ],
+ "media_type.media_name": [
+  "Video",
+  "Print",
+  "PDF",
+  "ISSUING ",
+  "Faculty",
+  "CD",
+  "Audio"
+ ],
+ "bookaccessionmaster.item_type": [
+  "Book",
+  "Books",
+  "Articles",
+  "Thesis",
+  "Rare Books",
+  "Borrowed",
+  "damage"
+ ],
+ "librarysetupinformation.currentacademicsession": [
+  ""
+ ],
+ "bookcatalog.booktype": [
+  "7",
+  "9",
+  "6",
+  "10",
+  "0",
+  "1",
+  "8",
+  "13",
+  "4"
+ ],
+ "vmember.status": [
+  "Active",
+  "0",
+  "Sleep"
+ ],
+ "vmember.classname": [
+  "STUDENT",
+  "STAFF",
+  "Faculty Member",
+  "check",
+  "student iit",
+  "bachelor s grp",
+  "Security",
+  "new student",
+  "HOSTAL GROUP"
+ ],
+ "vmember.cat_name": [
+  "Gen",
+  "Test upd",
+  "other back caste"
+ ]
+}

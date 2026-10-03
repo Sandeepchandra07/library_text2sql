@@ -1,0 +1,18 @@
+[
+  {"q": "how many book titles and copies are in the library",
+   "ref": "SELECT (SELECT COUNT(*) FROM bookcatalog), (SELECT COUNT(*) FROM bookaccessionmaster)"},
+  {"q": "how many books are currently issued",
+   "ref": "SELECT COUNT(*) FROM CircIssueTransaction WHERE status = 'Issued'"},
+  {"q": "how many copies are available",
+   "ref": "SELECT COUNT(*) FROM bookaccessionmaster WHERE CheckStatus = 'A'"},
+  {"q": "how many overdue books are there",
+   "ref": "SELECT COUNT(*) FROM CircIssueTransaction WHERE status = 'Issued' AND duedate < CAST(GETDATE() AS date)"},
+  {"q": "top 5 most issued books",
+   "ref": "SELECT TOP 5 bc.title, COUNT(*) c FROM CircIssueTransaction it JOIN bookaccessionmaster am ON it.accno = am.accessionnumber JOIN bookcatalog bc ON am.ctrl_no = bc.ctrl_no GROUP BY bc.title ORDER BY c DESC"},
+  {"q": "how many members have expired membership",
+   "ref": "SELECT COUNT(*) FROM CircUserManagement WHERE validupto < CAST(GETDATE() AS date)"},
+  {"q": "kitni kitabein aaj issue hui",
+   "ref": "SELECT COUNT(*) FROM CircIssueTransaction WHERE CAST(issuedate AS date) = CAST(GETDATE() AS date)"},
+  {"q": "digital content count by type",
+   "ref": "SELECT tc.ContentType, COUNT(*) FROM DigitalContent dc JOIN TypeOfContent tc ON dc.ContentTypeId = tc.Id GROUP BY tc.ContentType"}
+]
